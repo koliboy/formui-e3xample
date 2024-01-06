@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8">
+ <meta name="viewport" content="width=device-width">
+ <title>smaple</title>  <!-- defulat  scropts-->
+<script src="https://koliboy.github.io/page/data/js/console.js"></script>
+  <script src="https://koliboy.github.io/page/data/js/ssall.js"></script>
+ <!-- <script src="https://koliboy.github.io/page/data/js/http3.js"></script>-->
+  <!-- <script src="https://koliboy.github.io/page/data/js/theme.js"></script>  -->
+ <!-- <script src="https://koliboy.github.io/page/data/js/userAgent.js"></script>-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/dark.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
+</style>
+  <style>
+   
+    pre code {
+        display: flex; height:auto; position:fixed;  top:0; bottom:0;
+      left:0;right:0; scrollbar-width: thin;
+         /*font-family: 'Roboto Flex', sans-serif;*/
+         font-family: 'Source Code Pro', monospace;
+     }
+      pre code::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  pre code::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+
+ pre code::-webkit-scrollbar-thumb:active {
+    background: #777;
+  }
+
+ pre code::-webkit-scrollbar-thumb {
+    background: rgba(209, 209, 209, 0.94);
+    border-radius: 6px;
+  }
+  </style>
+
+   </head>
+    <body>
+ <pre type="html"><code class="html">
+
+</code></pre>
+
+
+
+<script>
+ ss('code').textContent = `
+<datalist name="countries3">
+        <data value="usa"><img src="https://koliboy.github.io/formui/data/images/usa.png"></data>
+        <data value="canada"><img src="https://koliboy.github.io/formui/data/images/canada.png"></data>
+        <data value="uk"><img src="https://koliboy.github.io/formui/data/images/uk.png"></data>
+        <data value="in"><img src="https://koliboy.github.io/formui/data/images/india.png"></data>
+        <data value="sweden"><img src="https://koliboy.github.io/formui/data/images/sweden.png"></data>
+        <data value="germany"><img src="https://koliboy.github.io/formui/data/images/germany.png"></data>
+      </datalist>
+
+      <div form="select" name="countries3" multiple size="2" search selectType="left-icon" placeholder="countries"
+        search-holder="Find-Country">
+
+        <o value="usa">United States</o>
+        <o value="canada">Canada</o>
+        <o value="uk">United Kingdom</o>
+        <o value="in">India</o>
+        <o value="sweden">Sweden</o>
+        <o value="germany">Germany</o>
+      </div>
+
+      <div form="select" multiple size="3" placeholder="countries" search-holder="Find-Country">
+
+        <o value="usa">United States</o>
+        <o value="canada">Canada</o>
+        <o value="uk">United Kingdom</o>
+        <o value="in">India</o>
+        <o value="sweden">Sweden</o>
+        <o value="germany">Germany</o>
+      </div>
+ 
+ `
+    hljs.highlightAll();
+</script>
+
+  </body>
+</html>
