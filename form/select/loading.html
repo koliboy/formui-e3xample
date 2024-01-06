@@ -15,7 +15,7 @@
   @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
 </style>
   <style>
-   
+     
     pre code {
         display: flex; height:auto; position:fixed;  top:0; bottom:0;
       left:0;right:0; scrollbar-width: thin;
@@ -47,33 +47,29 @@
 
 </code></pre>
 
-
-
+                   
 <script>
  ss('code').textContent = `
   <datalist name="countries7">
-        <data value="usa"><img src="https://koliboy.github.io/formui/data/images/usa.png"></data>
-        <data value="canada"><img src="https://koliboy.github.io/formui/data/images/canada.png"></data>
-      </datalist>
+  <data value="usa"><img src="https://koliboy.github.io/formui/data/images/usa.png"></data>
+  <data value="canada"><img src="https://koliboy.github.io/formui/data/images/canada.png"></data>
+  </datalist>
 
-      <div form="select" class="loading" name="countries7" search selectType="left-icon" placeholder="countries"
-        search-holder="Find-Country">
-      </div>
+<div form="select" class="loading" name="countries7" search selectType="left-icon" placeholder="countries"
+  search-holder="Find-Country">
+</div>
 
-      script
-        var element = document.querySelector(".loading");
-        var s = $select(element);
-        s.cntload(function (event) {
-          event.label(true, "loading....")
-          setTimeout(function () {
-            event.clear(` <o value="usa" disabled>United States</o>
-  <o value="canada" >Canada</o> `)
-          }, 300);
-        });
-
-      script
- 
- `
+<script>
+  var element = document.querySelector(".loading");
+  var s = $select(element);
+  s.cntload(function (event) {
+    event.label(true, "loading....")
+    setTimeout(function () {
+      event.clear('<o value="usa" disabled>United States</o> < o value = "canada" > Canada</o >')
+    }, 300);
+  });
+</`+"script>"
+     
     hljs.highlightAll();
 </script>
 
