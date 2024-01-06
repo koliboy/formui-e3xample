@@ -17,9 +17,29 @@
  
   
   <style>
+   
     pre code {
-        margin:0; display: flex; height:auto;
+        display: flex; height:auto; position:fixed;  top:0; bottom:0;
+      left:0;right:0; scrollbar-width: thin;
+         
      }
+      pre code::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  pre code::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+
+ pre code::-webkit-scrollbar-thumb:active {
+    background: #777;
+  }
+
+ pre code::-webkit-scrollbar-thumb {
+    background: rgba(209, 209, 209, 0.94);
+    border-radius: 6px;
+  }
   </style>
 
    </head>
@@ -54,60 +74,6 @@
         <o value="option1">Option1</o>
         <o value="option2">Option 2 </o>
       </div>
- form
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
  
  `
     hljs.highlightAll();
