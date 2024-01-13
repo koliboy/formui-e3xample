@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8">
+ <meta name="viewport" content="width=device-width">
+ <title>smaple</title>  <!-- defulat  scropts-->
+<script src="https://koliboy.github.io/page/data/js/console.js"></script>
+  <script src="https://koliboy.github.io/page/data/js/ssall.js"></script>
+ <!-- <script src="https://koliboy.github.io/page/data/js/http3.js"></script>-->
+  <!-- <script src="https://koliboy.github.io/page/data/js/theme.js"></script>  -->
+ <!-- <script src="https://koliboy.github.io/page/data/js/userAgent.js"></script>-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/dark.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
+</style>
+  <style>
+   
+    pre code {
+        display: flex; height:auto; position:fixed;  top:0; bottom:0;
+      left:0;right:0; scrollbar-width: thin;
+         /*font-family: 'Roboto Flex', sans-serif;*/
+         font-family: 'Source Code Pro', monospace;
+     }
+      pre code::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  pre code::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+
+ pre code::-webkit-scrollbar-thumb:active {
+    background: #777;
+  }
+
+ pre code::-webkit-scrollbar-thumb {
+    background: rgba(209, 209, 209, 0.94);
+    border-radius: 6px;
+  }
+  </style>
+
+   </head>
+    <body>
+ <pre type="html"><code class="html">
+
+</code></pre>
+
+
+
+<script>
+ ss('code').textContent = `
+<style>
+  fieldset {
+    border: var(--border-style) var(--border-width) var(--border-color);
+    color: var(--color);
+    font-size: var(--font-size);
+    width: 80%;
+    max-width: 700px;
+  }
+
+  fieldset div {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+  }
+
+  fieldset label {
+    font-size: 20px;
+  }
+
+  fieldset input {
+    --font-size: 20px;
+  }
+
+  fieldset input:disabled+label {
+    opacity: var(--disabled-opacity);
+  }
+
+  .dark input[type="checkbox"] {
+    --color-secondary: black;
+  }
+</style>
+<fieldset>
+  <legend>Choose your monster's features:</legend>
+
+  <div>
+    <input toggle type="checkbox" id="scales" class="a" name="scales" checked />
+    <label for="scales">Scales</label>
+  </div>
+
+  <div>
+    <input toggle type="checkbox" id="horns" name="horns" checked />
+    <label for="horns">Horns</label>
+  </div>
+  <div>
+    <input toggle type="checkbox" id="horns" name="horns" />
+    <label for="horns">Horns</label>
+  </div>
+  <div>
+    <input toggle type="checkbox" id="error" name="coooo" />
+    <label for="error">error</label>
+  </div>
+  <div>
+
+    <input toggle type="checkbox" disabled="" id="guitar" name="guitar" />
+    <label for="guitar">Guitar disabled</label>
+  </div>
+
+</fieldset>
+ `
+    hljs.highlightAll();
+</script>
+
+  </body>
+</html>
