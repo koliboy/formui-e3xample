@@ -1,1 +1,126 @@
-ryhhreh
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8">
+ <meta name="viewport" content="width=device-width">
+ <title>smaple</title>  <!-- defulat  scropts-->
+<script src="https://koliboy.github.io/page/data/js/console.js"></script>
+  <script src="https://koliboy.github.io/page/data/js/ssall.js"></script>
+ <!-- <script src="https://koliboy.github.io/page/data/js/http3.js"></script>-->
+  <!-- <script src="https://koliboy.github.io/page/data/js/theme.js"></script>  -->
+ <!-- <script src="https://koliboy.github.io/page/data/js/userAgent.js"></script>-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/dark.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
+</style>
+  <style>
+   
+    pre code {
+        display: flex; height:auto; position:fixed;  top:0; bottom:0;
+      left:0;right:0; scrollbar-width: thin;
+         /*font-family: 'Roboto Flex', sans-serif;*/
+         font-family: 'Source Code Pro', monospace;
+     }
+      pre code::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  pre code::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+
+ pre code::-webkit-scrollbar-thumb:active {
+    background: #777;
+  }
+
+ pre code::-webkit-scrollbar-thumb {
+    background: rgba(209, 209, 209, 0.94);
+    border-radius: 6px;
+  }
+  </style>
+
+   </head>
+    <body>
+ <pre type="html"><code class="html">
+
+</code></pre>
+
+
+
+<script>
+ ss('code').textContent = `
+<button class="button" data="post-id-3" dg-defind="edit" dialog="trigger">Edit profile</button>
+<div class="dialog demo1" dg-defind="edit" d-title="Edit profile">
+
+    <div class="dialog-content  padding-card  over-x-adjust" style="padding-top:0">
+        <p class="h8 color-blur">
+            Make changes to your profile here. Click save when you're done.
+        </p>
+        <div class="g g-gap">
+            <div class="flex center f-wrap center-tb flex-gap-x">
+                <div class="h7 wm-25"> Name</div>
+                <div form="input" class="f-auto">
+                    <input type="text" value=" sitaram koli" placeholder="your name">
+                </div>
+            </div>
+            <div class="flex center f-wrap center-tb flex-gap-x ">
+                <div class="h7 wm-25">Username</div>
+                <div form="input" class="f-auto">
+                    <input type="text" value="@koli" placeholder="Username">
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="button clos-d">Save changes</div>
+            <script>
+                $qs(".clos-d").onclick = function () {
+                    $dialog($qs(".demo1")).close()
+                }
+            </script>
+        </div>
+    </div>
+</div>
+<div class="divider w-100"></div>
+<button class="button gap-t-b" data="post-id-3" dg-defind="share" dialog="trigger">Share</button>
+<div class="dialog demo2" dg-defind="share" d-title="Share link">
+
+    <div class="dialog-content  padding-card  over-x-adjust" style="padding-top:0">
+        <p class="h8 color-blur">
+            Anyone who has this link will be able to view this.
+        </p>
+        <div class="g g-gap">
+
+            <div class="flex center f-wrap center-tb flex-gap-x ">
+                <div form="input" class="f-auto">
+                    <input type="text" class="color-blur" style="opacity:1;cursor:auto;" disabled
+                        value="exampl.com/@koli/35343454545" placeholder="Username">
+                </div>
+                <div class="button" style="--font-size:15px">
+                    <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M4 2C2.895 2 2 2.895 2 4L2 18L4 18L4 4L18 4L18 2L4 2 z M 8 6C6.895 6 6 6.895 6 8L6 20C6 21.105 6.895 22 8 22L20 22C21.105 22 22 21.105 22 20L22 8C22 6.895 21.105 6 20 6L8 6 z M 8 8L20 8L20 20L8 20L8 8 z" />
+                        </svg></div>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="button clos-d2">close</div>
+            <script>
+                $qs(".clos-d2").onclick = function () {
+                    $dialog($qs(".demo2")).close()
+                }
+            </script>
+        </div>
+    </div>
+
+
+
+
+</div>
+`
+    hljs.highlightAll();
+</script>
+
+  </body>
+</html>
+
