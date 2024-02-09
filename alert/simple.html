@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8">
+ <meta name="viewport" content="width=device-width">
+ <title>smaple</title>  <!-- defulat  scropts-->
+<script src="https://koliboy.github.io/page/data/js/console.js"></script>
+  <script src="https://koliboy.github.io/page/data/js/ssall.js"></script>
+ <!-- <script src="https://koliboy.github.io/page/data/js/http3.js"></script>-->
+  <!-- <script src="https://koliboy.github.io/page/data/js/theme.js"></script>  -->
+ <!-- <script src="https://koliboy.github.io/page/data/js/userAgent.js"></script>-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/dark.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
+</style>
+  <style>
+   
+    pre code {
+        display: flex; height:auto; position:fixed;  top:0; bottom:0;
+      left:0;right:0; scrollbar-width: thin;
+         /*font-family: 'Roboto Flex', sans-serif;*/
+         font-family: 'Source Code Pro', monospace;
+     }
+      pre code::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  pre code::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+
+ pre code::-webkit-scrollbar-thumb:active {
+    background: #777;
+  }
+
+ pre code::-webkit-scrollbar-thumb {
+    background: rgba(209, 209, 209, 0.94);
+    border-radius: 6px;
+  }
+  </style>
+
+   </head>
+    <body>
+ <pre type="html"><code class="html">
+
+</code></pre>
+
+
+
+<script>
+ ss('code').textContent = `
+<style>
+   .ss {
+      --color-tertiary: var(--color-surface);
+   }
+
+   .button {
+      --font-size: 20px;
+   }
+</style>
+<div class="g g-gap padding-card" style="gap:50px">
+   <div class="button primary " style="--color-secondary:var(--color-primary-container)">
+      <div>click Alert primary</div>
+   </div>
+   <div class="button ss error" style="--color-secondary:var(--error-color-container)"> click AlertDanger</div>
+   <div class="button ss success" style="--color-secondary:var(--color-success-container)"> click Alert success</div>
+   <div class="button ss warning" style="--color-secondary:var(--color-warning-container)"> click Alert warning</div>
+   <div class="button sleep" style="--color-secondary:var(--color-primary-container)"> click Alert no sleep auto by
+      close button</div>
+   <div class="button time" style="--color-secondary:var(--color-primary-container)"> click Alert display Timestamp 5s
+   </div>
+
+</div>
+<script>
+   $alert("Welcome to our website!", "primary");
+
+   ss(".primary").addEventListener("click", function () {
+      $alert("Operation successful!", "primary")
+   })
+
+   ss(".error").addEventListener("click", function () {
+      $alert("Please enter the email address you want to use to log in with", "error")
+   });
+   ss(".success").addEventListener("click", function () {
+      $alert("Your name has been updated. Account created successfully!", "success")
+   })
+   ss(".warning").addEventListener("click", function () {
+      $alert("Warning: Please check your account information!!", "warning")
+   })
+
+   ss(".sleep").addEventListener("click", function () {
+      $alert("close this massage click right button", "primary", { sleep: false })
+   })
+
+   ss(".time").addEventListener("click", function () {
+      $alert("Warning: 🧾 There may be issues with billing and padding. Please review your account information", "primary", { display: "5s" })
+   });
+</`+"script>"
+    hljs.highlightAll();
+</script>
+
+  </body>
+</html>
