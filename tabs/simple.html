@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8">
+ <meta name="viewport" content="width=device-width">
+ <title>smaple</title>  <!-- defulat  scropts-->
+<script src="https://koliboy.github.io/page/data/js/console.js"></script>
+  <script src="https://koliboy.github.io/page/data/js/ssall.js"></script>
+ <!-- <script src="https://koliboy.github.io/page/data/js/http3.js"></script>-->
+  <!-- <script src="https://koliboy.github.io/page/data/js/theme.js"></script>  -->
+ <!-- <script src="https://koliboy.github.io/page/data/js/userAgent.js"></script>-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/dark.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
+</style>
+  <style>
+   
+    pre code {
+        display: flex; height:auto; position:fixed;  top:0; bottom:0;
+      left:0;right:0; scrollbar-width: thin;
+         /*font-family: 'Roboto Flex', sans-serif;*/
+         font-family: 'Source Code Pro', monospace;
+     }
+      pre code::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  pre code::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+
+ pre code::-webkit-scrollbar-thumb:active {
+    background: #777;
+  }
+
+ pre code::-webkit-scrollbar-thumb {
+    background: rgba(209, 209, 209, 0.94);
+    border-radius: 6px;
+  }
+  </style>
+
+   </head>
+    <body>
+ <pre type="html"><code class="html">
+
+</code></pre>
+
+
+
+<script>
+ ss('code').textContent = `
+<style>
+  .gallery {
+    display: none;
+    text-align: center;
+  }
+
+  .gallery[tab-active] {
+    display: block;
+  }
+</style>
+<!--simple Example-->
+<div class="border  flex g-gap flex-col padding-cnt center center-tb">
+  <div class="flex gap-l-f padding-cnt tabs">
+    <button tab-t=".target" tab-d class="button tab">Photos</button>
+    <button tab-t=".target2" class="button tab">Music</button>
+    <button tab-t=".target3" class="button tab">Videos</button>
+  </div>
+  <div class="target gallery h1 gap-l">
+    Content-Photos
+  </div>
+  <div class="target2 gallery h1 gap-l">
+    Content-Music
+  </div>
+  <div class="target3 gallery h1 gap-l">
+    Content-Videos
+  </div>
+</div>
+<div class="divider w-100"></div>
+<div class="h3 w-100 color-blur" style="text-align: center;">url pattren</div>
+
+<!--url pattren example-->
+<div class="  border flex g-gap flex-col padding-cnt center center-tb">
+  <div class="flex gap-l-f padding-cnt tabs" tabs-url="hash">
+    <a href="#photos" tab-t=".photos" tab-d class="button tab">Photos</a>
+    <a href="#musics" tab-t=".music" class="button tab">Musics</a>
+    <a href="#videos" tab-t=".video" class="button tab">Videos</a>
+
+  </div>
+
+  <div class="photos gallery h1 gap-l">
+    Content-Photos
+  </div>
+  <div class="music gallery h1 gap-l">
+    Content-Music
+  </div>
+  <div class="video gallery h1 gap-l">
+    Content-Videos
+  </div>
+
+</div>
+<div class="divider w-100"></div>
+<div class="h3 w-100 color-blur" style="text-align: center;">Tab by Scroll to Element Focus</div>
+
+<!--Tab by Scroll to Element Focus-->
+
+
+<style>
+  .focus div {
+    background: var(--color-surface-container);
+    text-align: center;
+  }
+</style>
+
+<div class="border w-100 flex g-gap flex-col padding-cnt center center-tb">
+  <div class="flex gap-l-f padding-cnt tabs">
+    <button tab-t=".focus" tab-f-t=".a" tab-d class="button tab">A</button>
+    <button tab-t=".focus" tab-f-t=".b" class="button tab">B</button>
+    <button tab-t=".focus" tab-f-t=".c" class="button tab">C</button>
+
+  </div>
+</div>
+<div class="focus border g g-gap  w-100" style="height:300px;overflow:auto;">
+  <div class="a" style="height:400px">
+    AAAAAA
+  </div>
+
+  <div class="b" style="height:400px;">
+    BBBBB
+  </div>
+
+  <div class="c" style="height:400px;">
+    CCCCC
+  </div>
+
+</div>
+
+<div class="border w-100 flex g-gap flex-col padding-cnt center center-tb">
+  <div class="flex gap-l-f padding-cnt tabs">
+    <button tab-t=".focus2" tab-f-t=".a1" tab-d class="button tab">1</button>
+    <button tab-t=".focus2" tab-f-t=".b2" class="button tab">2</button>
+    <button tab-t=".focus2" tab-f-t=".c3" class="button tab">3</button>
+
+  </div>
+</div>
+<style>
+  .focus2 div {
+    background: var(--color-surface-container);
+    text-align: center;
+    min-width: 400px;
+    height: 300px;
+  }
+</style>
+<div class="focus2 border flex g-gap  " style="width:400px;height:300px;overflow:auto;overflow-y:auto">
+  <div class="a1">
+    1
+  </div>
+
+  <div class="b2">
+    2
+  </div>
+
+  <div class="c3">
+    3
+  </div>
+
+</div>
+
+<div class="divider w-100"></div>
+<div class="h3 w-100 color-blur" style="text-align: center;">Customizes</div>
+<!--Customizes-->
+<style>
+  .cusm1 {
+    background: var(--color-surface-container);
+    border-radius: var(--border-radius);
+  }
+
+  .cusm1 .tab {
+    --color-surface-container: none
+  }
+
+  .cusm2 .tab[tab-active] {
+    background: var(--background-color);
+    --color-surface: var(--color);
+    --border-radius: 15px;
+    box-shadow: 0 2px 4px var(--box-shadow-color);
+
+  }
+
+  .test-icon {
+    fill: none;
+  }
+
+  .cusm3 .tab[tab-active] .test-icon,
+  .cusm4 .tab[tab-active] .test-icon {
+    fill: var(--color-surface);
+  }
+
+  .cusm4 {
+    background: none;
+  }
+
+  .cusm5 .tab[tab-active] {
+    background: var(--color-secondary);
+
+  }
+
+  .cusm5 .tab[tab-active] .icon,
+  .cusm5 .tab[tab-active] .test-icon {
+    fill: var(--color-tertiary);
+  }
+
+  .cusm6 .tab[tab-active] {
+    background: none;
+  }
+
+  .cusm6 .tab[tab-active] .icon,
+  .cusm6 .tab[tab-active] .test-icon {
+    fill: var(--color);
+  }
+
+  .cusm7 .tab {
+    border-radius: 0px;
+    border-bottom: solid 2px rgba(0, 0, 0, 0);
+  }
+
+  .cusm7 .tab[tab-active] {
+    background: none;
+    color: var(--color);
+    border-bottom: solid 2px var(--color-primary-container);
+  }
+
+  .cusm8 .tab {
+    background: none;
+  }
+
+  .cusm8 .tab[tab-active] {
+    background: none;
+    border: solid 1px var(--color-secondary);
+    color: var(--color);
+  }
+</style>
+<div class=" flex g-gap flex-col padding-cnt center center-tb" style="gap:100px">
+  <div class="cusm1 cusm7 flex gap-l-f padding-cnt tabs">
+    <button tab-d class="button tab">Photos</button>
+    <button class="button tab ">Music</button>
+    <button class="button tab ">Videos</button>
+  </div>
+  <div class="cusm1  flex gap-l-f tabs">
+    <button tab-d class="button tab">Photos</button>
+    <button class="button tab ">Music</button>
+    <button class="button tab ">Videos</button>
+  </div>
+  <div class="cusm1 cusm2 flex gap-l-f padding-cnt tabs">
+    <button class="button tab">Photos</button>
+    <button tab-d class="button tab ">Music</button>
+    <button class="button tab ">Videos</button>
+  </div>
+
+  <div class="cusm1 cusm3 flex gap-l-f padding-cnt tabs">
+    <button tab-d class="button tab">
+      <div class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M19,11v9h-5v-6h-4v6H5v-9H3.6L12,3.4l8.4,7.6H19z" class="test-icon" />
+          <path d="M20,21h-7v-6h-2v6H4v-9H1l11-9.9L23,12h-3V21z M15,19h3v-8.8l-6-5.4l-6,5.4V19h3v-6h6V19z" />
+        </svg>
+      </div>
+
+    </button>
+    <button class="button tab">
+      <div class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M15 9L15 13 9 13 9 18 21 18 21 9z" class="test-icon" />
+          <path
+            d="M14,3H4C2.9,3,2,3.9,2,5v12l3-3h9c1.1,0,2-0.9,2-2V5C16,3.9,15.1,3,14,3z M14,12H5H4.2L4,12.2V5h10V12z" />
+          <path d="M20,8h-5v2h5v7.2L19.8,17H19h-9v-4H8v4c0,1.1,0.9,2,2,2h9l3,3V10C22,8.9,21.1,8,20,8z" />
+          <path d="M3 4H15V13H3z" class="test-icon" />
+        </svg>
+      </div>
+
+    </button>
+    <button class="button tab">
+      <div class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path
+            d="M18.091 2.082l-1.218 1.584C18.771 5.128 20 7.418 20 10h2C22 6.772 20.464 3.91 18.091 2.082zM5.909 2.082l1.218 1.584C5.229 5.128 4 7.418 4 10H2C2 6.772 3.536 3.91 5.909 2.082zM13.5 5h-3V3.5C10.5 2.672 11.172 2 12 2h0c.828 0 1.5.672 1.5 1.5V5z" />
+          <path
+            d="M12,6c2.206,0,4,1.794,4,4v6v0.828L16.172,17H7.828L8,16.828V16v-6C8,7.794,9.794,6,12,6 M12,4c-3.314,0-6,2.686-6,6v6l-2,2v1h16v-1l-2-2v-6C18,6.686,15.314,4,12,4L12,4z" />
+          <path d="M12 18A2 2 0 1 0 12 22A2 2 0 1 0 12 18Z" />
+          <path d="M12,5L12,5c-2.761,0-5,2.239-5,5v8h10v-8C17,7.239,14.761,5,12,5z" class="test-icon" />
+        </svg>
+      </div>
+
+    </button>
+  </div>
+  <div class="cusm1 cusm4 border flex gap-l-f padding-cnt tabs">
+    <button tab-d class="button tab">
+      <div class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M19,11v9h-5v-6h-4v6H5v-9H3.6L12,3.4l8.4,7.6H19z" class="test-icon" />
+          <path d="M20,21h-7v-6h-2v6H4v-9H1l11-9.9L23,12h-3V21z M15,19h3v-8.8l-6-5.4l-6,5.4V19h3v-6h6V19z" />
+        </svg>
+      </div>
+
+    </button>
+    <button class="button tab">
+      <div class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M15 9L15 13 9 13 9 18 21 18 21 9z" class="test-icon" />
+          <path
+            d="M14,3H4C2.9,3,2,3.9,2,5v12l3-3h9c1.1,0,2-0.9,2-2V5C16,3.9,15.1,3,14,3z M14,12H5H4.2L4,12.2V5h10V12z" />
+          <path d="M20,8h-5v2h5v7.2L19.8,17H19h-9v-4H8v4c0,1.1,0.9,2,2,2h9l3,3V10C22,8.9,21.1,8,20,8z" />
+          <path d="M3 4H15V13H3z" class="test-icon" />
+        </svg>
+      </div>
+
+    </button>
+    <button class="button tab">
+      <div class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path
+            d="M18.091 2.082l-1.218 1.584C18.771 5.128 20 7.418 20 10h2C22 6.772 20.464 3.91 18.091 2.082zM5.909 2.082l1.218 1.584C5.229 5.128 4 7.418 4 10H2C2 6.772 3.536 3.91 5.909 2.082zM13.5 5h-3V3.5C10.5 2.672 11.172 2 12 2h0c.828 0 1.5.672 1.5 1.5V5z" />
+          <path
+            d="M12,6c2.206,0,4,1.794,4,4v6v0.828L16.172,17H7.828L8,16.828V16v-6C8,7.794,9.794,6,12,6 M12,4c-3.314,0-6,2.686-6,6v6l-2,2v1h16v-1l-2-2v-6C18,6.686,15.314,4,12,4L12,4z" />
+          <path d="M12 18A2 2 0 1 0 12 22A2 2 0 1 0 12 18Z" />
+          <path d="M12,5L12,5c-2.761,0-5,2.239-5,5v8h10v-8C17,7.239,14.761,5,12,5z" class="test-icon" />
+        </svg>
+      </div>
+
+    </button>
+  </div>
+  <div class="cusm1 cusm4 cusm5 border flex gap-l-f padding-cnt tabs">
+    <button class="button tab">
+      <div class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M19,11v9h-5v-6h-4v6H5v-9H3.6L12,3.4l8.4,7.6H19z" class="test-icon" />
+          <path d="M20,21h-7v-6h-2v6H4v-9H1l11-9.9L23,12h-3V21z M15,19h3v-8.8l-6-5.4l-6,5.4V19h3v-6h6V19z" />
+        </svg>
+      </div>
+
+    </button>
+    <button tab-d class="button tab">
+      <div class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M15 9L15 13 9 13 9 18 21 18 21 9z" class="test-icon" />
+          <path
+            d="M14,3H4C2.9,3,2,3.9,2,5v12l3-3h9c1.1,0,2-0.9,2-2V5C16,3.9,15.1,3,14,3z M14,12H5H4.2L4,12.2V5h10V12z" />
+          <path d="M20,8h-5v2h5v7.2L19.8,17H19h-9v-4H8v4c0,1.1,0.9,2,2,2h9l3,3V10C22,8.9,21.1,8,20,8z" />
+          <path d="M3 4H15V13H3z" class="test-icon" />
+        </svg>
+      </div>
+
+    </button>
+    <button class="button tab">
+      <div class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path
+            d="M18.091 2.082l-1.218 1.584C18.771 5.128 20 7.418 20 10h2C22 6.772 20.464 3.91 18.091 2.082zM5.909 2.082l1.218 1.584C5.229 5.128 4 7.418 4 10H2C2 6.772 3.536 3.91 5.909 2.082zM13.5 5h-3V3.5C10.5 2.672 11.172 2 12 2h0c.828 0 1.5.672 1.5 1.5V5z" />
+          <path
+            d="M12,6c2.206,0,4,1.794,4,4v6v0.828L16.172,17H7.828L8,16.828V16v-6C8,7.794,9.794,6,12,6 M12,4c-3.314,0-6,2.686-6,6v6l-2,2v1h16v-1l-2-2v-6C18,6.686,15.314,4,12,4L12,4z" />
+          <path d="M12 18A2 2 0 1 0 12 22A2 2 0 1 0 12 18Z" />
+          <path d="M12,5L12,5c-2.761,0-5,2.239-5,5v8h10v-8C17,7.239,14.761,5,12,5z" class="test-icon" />
+        </svg>
+      </div>
+
+    </button>
+  </div>
+  <div class="cusm1 cusm4 cusm5 cusm6 border flex gap-l-f padding-cnt tabs">
+    <button tab-d class="button tab">
+      <div class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M19,11v9h-5v-6h-4v6H5v-9H3.6L12,3.4l8.4,7.6H19z" class="test-icon" />
+          <path d="M20,21h-7v-6h-2v6H4v-9H1l11-9.9L23,12h-3V21z M15,19h3v-8.8l-6-5.4l-6,5.4V19h3v-6h6V19z" />
+        </svg>
+      </div>
+
+    </button>
+    <button class="button tab">
+      <div class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M15 9L15 13 9 13 9 18 21 18 21 9z" class="test-icon" />
+          <path
+            d="M14,3H4C2.9,3,2,3.9,2,5v12l3-3h9c1.1,0,2-0.9,2-2V5C16,3.9,15.1,3,14,3z M14,12H5H4.2L4,12.2V5h10V12z" />
+          <path d="M20,8h-5v2h5v7.2L19.8,17H19h-9v-4H8v4c0,1.1,0.9,2,2,2h9l3,3V10C22,8.9,21.1,8,20,8z" />
+          <path d="M3 4H15V13H3z" class="test-icon" />
+        </svg>
+      </div>
+
+    </button>
+    <button class="button tab">
+      <div class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path
+            d="M18.091 2.082l-1.218 1.584C18.771 5.128 20 7.418 20 10h2C22 6.772 20.464 3.91 18.091 2.082zM5.909 2.082l1.218 1.584C5.229 5.128 4 7.418 4 10H2C2 6.772 3.536 3.91 5.909 2.082zM13.5 5h-3V3.5C10.5 2.672 11.172 2 12 2h0c.828 0 1.5.672 1.5 1.5V5z" />
+          <path
+            d="M12,6c2.206,0,4,1.794,4,4v6v0.828L16.172,17H7.828L8,16.828V16v-6C8,7.794,9.794,6,12,6 M12,4c-3.314,0-6,2.686-6,6v6l-2,2v1h16v-1l-2-2v-6C18,6.686,15.314,4,12,4L12,4z" />
+          <path d="M12 18A2 2 0 1 0 12 22A2 2 0 1 0 12 18Z" />
+          <path d="M12,5L12,5c-2.761,0-5,2.239-5,5v8h10v-8C17,7.239,14.761,5,12,5z" class="test-icon" />
+        </svg>
+      </div>
+
+    </button>
+  </div>
+  <div class="cusm8    tabs">
+    <ul class="g  g-gap">
+      <li tab-d class="tab">Home</li>
+      <li class="tab">products</li>
+      <li class="tab">About</li>
+    </ul>
+  </div>
+</div>
+
+
+`
+    hljs.highlightAll();
+</script>
+
+  </body>
+</html>
